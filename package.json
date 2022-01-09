@@ -23,11 +23,14 @@
     "start": "ember serve",
     "test": "npm-run-all lint test:*",
     "test:ember": "ember test",
-    "test:ember-compatibility": "ember try:each"
+    "test:ember-compatibility": "ember try:each",
+    "test:node": "jest"
   },
   "dependencies": {
     "ember-cli-babel": "^7.26.8",
-    "ember-cli-htmlbars": "^6.0.1"
+    "ember-cli-babel-plugin-helpers": "^1.1.1",
+    "ember-cli-htmlbars": "^6.0.1",
+    "ember-cli-version-checker": "^5.1.2"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
@@ -36,6 +39,7 @@
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-tester": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^2.2.4",
     "ember-cli": "~4.0.0",
@@ -59,6 +63,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-qunit": "^7.2.0",
+    "jest": "^27.4.7",
     "loader.js": "^4.7.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.5.1",
